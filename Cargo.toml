@@ -1,0 +1,21 @@
+[package]
+name = "sidecard-rust"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+toml = "0.8.19"
+serde = { version = "1.0.214", features = ["derive"] }
+httparse = "1.9.5"
+
+[[bin]]
+name = "sidecard"
+path = "src/sidecar/main.rs"
+test = true
+bench = false
+
+[[bin]]
+name = "control-plane"
+path = "src/control_plane/main.rs"
+test = true
+bench = false

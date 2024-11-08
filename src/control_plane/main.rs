@@ -1,0 +1,3 @@
+mod sidecard;
+
+fn main() {}
